@@ -1,0 +1,23 @@
+tasks:
+  program1:
+    process: /path/to/default/program1
+    args:
+    working_dir: /path/to/default/program1
+    environment:
+      default_env_var1: value1
+    delay: 1
+    logmaxsize: 10
+    loginterval: 7
+  program2:
+    process: /path/to/default/program2
+    args:
+    working_dir: /path/to/default/program2
+    environment:
+      default_env_var1: value2
+    delay: 1
+    logmaxsize: 10
+    loginterval: 7
+setting:
+  logdir: ./logs/
+  logmaxsize: 10
+  loginterval: 7

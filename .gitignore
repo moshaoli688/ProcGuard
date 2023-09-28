@@ -1,0 +1,15 @@
+
+dist
+*.tgz
+*.dev.sh
+build.*.sh
+
+# configs
+config.toml
+.history.yaml
+
+# miscs
+.idea
+.DS_Store
+._.DS_Store
+.vscode
