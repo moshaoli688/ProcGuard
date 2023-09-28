@@ -4,7 +4,6 @@ import (
 	"ProcGuardProject/GuardTask"
 	"ProcGuardProject/config"
 	"ProcGuardProject/utils"
-	"fmt"
 	"log"
 	"os"
 	"os/signal"
@@ -33,5 +32,5 @@ func main() {
 	signal.Notify(signalChannel, os.Interrupt, syscall.SIGTERM)
 	<-signalChannel
 	GuardTask.StopAllTasks()
-	fmt.Println("The program has terminated and all tasks have stopped")
+	utils.Info("The program has terminated and all tasks have stopped")
 }
